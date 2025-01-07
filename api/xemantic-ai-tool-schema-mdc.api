@@ -1,0 +1,4 @@
+public final class com/xemantic/ai/tool/schema/mdc/ObjectSchemaToMdcToolInputKt {
+	public static final fun toMdcToolInput (Lcom/xemantic/ai/tool/schema/ObjectSchema;)Lio/modelcontextprotocol/kotlin/sdk/Tool$Input;
+}
+
