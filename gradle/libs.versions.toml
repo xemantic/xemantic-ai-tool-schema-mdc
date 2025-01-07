@@ -1,0 +1,30 @@
+[versions]
+kotlinTarget = "2.1"
+javaTarget = "17"
+
+kotlin = "2.1.0"
+modelContextProtocol = "0.3.0"
+xemanticAiToolSchema = "0.1.4"
+xemanticKotlinTest = "1.1"
+
+versionsPlugin = "0.51.0"
+dokkaPlugin = "2.0.0"
+publishPlugin = "2.0.0"
+
+binaryCompatibilityValidatorPlugin = "0.17.0"
+
+[libraries]
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+mdc-kotlin-sdk = { module = "io.modelcontextprotocol:kotlin-sdk", version.ref = "modelContextProtocol" }
+xemantic-ai-tool-schema = { module = "com.xemantic.ai:xemantic-ai-tool-schema", version.ref = "xemanticAiToolSchema" }
+
+xemantic-kotlin-test = { module="com.xemantic.kotlin:xemantic-kotlin-test", version.ref="xemanticKotlinTest" }
+
+[plugins]
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlin-plugin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+kotlin-plugin-power-assert = { id = "org.jetbrains.kotlin.plugin.power-assert", version.ref = "kotlin" }
+dokka = { id = "org.jetbrains.dokka", version.ref = "dokkaPlugin" }
+versions = { id = "com.github.ben-manes.versions", version.ref = "versionsPlugin" }
+publish = { id = "io.github.gradle-nexus.publish-plugin", version.ref = "publishPlugin" }
+kotlinx-binary-compatibility-validator = { id = "org.jetbrains.kotlinx.binary-compatibility-validator", version.ref = "binaryCompatibilityValidatorPlugin" }
