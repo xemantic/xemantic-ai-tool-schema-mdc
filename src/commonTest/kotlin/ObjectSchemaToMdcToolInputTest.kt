@@ -34,7 +34,6 @@ class ObjectSchemaToMdcToolInputTest {
     @Test
     fun `Should convert class to MDC Tool Input`() {
         val input = mdcToolInput<Foo>()
-        println(input)
         input should {
             properties should {
                 have(size == 1)

@@ -39,9 +39,7 @@ dependencies {
 }
 ```
 
-###
-
-Getting `Tool.Input` instance:
+### Getting `Tool.Input` instance
 
 ```kotlin
 @Serializable
@@ -53,6 +51,8 @@ data class Foo(
 
 val inputSchema: Tool.Input = mdcToolInput<Foo>()
 ```
+
+See [ObjectSchemaToMdcToolInputTest](src/commonTest/kotlin/ObjectSchemaToMdcToolInputTest.kt) for details.
 
 ## Development
 
