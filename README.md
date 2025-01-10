@@ -35,7 +35,7 @@ In your `build.gradle.kts`:
 
 ```kotlin
 dependencies {
-    implementation("com.xemantic.ai:xemantic-ai-tool-schema-mdc:0.1")
+    implementation("com.xemantic.ai:xemantic-ai-tool-schema-mdc:0.1.1")
 }
 ```
 
