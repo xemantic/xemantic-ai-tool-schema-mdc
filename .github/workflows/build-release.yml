@@ -23,13 +23,13 @@ jobs:
           fetch-depth: 0
 
       - name: Setup Java
-        uses: actions/setup-java@v4.6.0
+        uses: actions/setup-java@v4.7.1
         with:
           distribution: 'temurin'
           java-version: 23
 
       - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v4.2.2
+        uses: gradle/actions/setup-gradle@v4.4.1
 
       - name: Build
         env:
@@ -52,7 +52,7 @@ jobs:
         run: sh .github/scripts/update-readme-version.sh
 
       - name: Create Pull Request
-        uses: stefanzweifel/git-auto-commit-action@v5.0.1
+        uses: stefanzweifel/git-auto-commit-action@v6.0.1
         with:
           commit_message: Dependency version in README.md updated to ${{ env.VERSION }}
           file_pattern: 'README.md'
